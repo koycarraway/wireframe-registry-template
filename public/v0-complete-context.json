@@ -1,0 +1,73 @@
+{
+  "designSystem": {
+    "name": "Wireframe Kit Design System",
+    "description": "A comprehensive wireframe-styled design system with 2px borders, flat shadows, and Shantell Sans typography",
+    "version": "1.0.0",
+    "homepage": "https://wireframe-registry-template.vercel.app",
+    "registry": "https://wireframe-registry-template.vercel.app/r/registry.json"
+  },
+  "files": {
+    "globals.css": {
+      "path": "app/globals.css",
+      "type": "css",
+      "description": "Global CSS styles with Tailwind imports and wireframe utilities",
+      "content": "Contains custom wireframe styling, Shantell Sans font, and shadow-flat utility"
+    },
+    "postcss.config.mjs": {
+      "path": "postcss.config.mjs", 
+      "type": "config",
+      "description": "PostCSS configuration for Tailwind CSS processing",
+      "content": "PostCSS configuration for Tailwind CSS and custom plugins"
+    },
+    "tailwind.config.js": {
+      "path": "tailwind.config.js",
+      "type": "config", 
+      "description": "Tailwind CSS configuration with wireframe customizations",
+      "content": "Tailwind config with custom font (Shantell Sans) and shadow-flat utility"
+    },
+    "layout.tsx": {
+      "path": "app/layout.tsx",
+      "type": "component",
+      "description": "Root layout component with global styles and metadata",
+      "content": "Next.js root layout with Shantell Sans font and global styles"
+    },
+    "components.json": {
+      "path": "components.json",
+      "type": "config",
+      "description": "shadcn/ui configuration for component paths and styling",
+      "content": "shadcn/ui configuration with component paths and Tailwind setup"
+    }
+  },
+  "components": {
+    "available": [
+      "button", "input", "checkbox", "radio-group", "switch", "textarea", "select", 
+      "label", "separator", "popover", "dialog", "alert-dialog", "dropdown-menu", 
+      "hover-card", "card", "badge", "avatar", "table", "tabs", "alert", 
+      "skeleton", "tooltip", "breadcrumb", "calendar", "date-picker", "sonner", 
+      "sidebar", "sheet"
+    ],
+    "baseUrl": "https://wireframe-registry-template.vercel.app/r/"
+  },
+  "designTokens": {
+    "borders": "2px solid black",
+    "shadows": "6px 6px 0px 0px #d1d5db",
+    "font": "Shantell Sans",
+    "colors": {
+      "primary": "black",
+      "secondary": "light gray",
+      "background": "white", 
+      "foreground": "black"
+    }
+  },
+  "rules": [
+    "Use 2px black borders on all interactive elements",
+    "Apply flat shadows (6px offset) to overlays and dropdowns",
+    "Use Shantell Sans typography for headings and labels", 
+    "Use black focus states with gray outline shadows",
+    "Use light gray hover states for secondary elements",
+    "Never use gradient shadows",
+    "Never use thin 1px borders",
+    "Never use default shadcn/ui colors without customization"
+  ],
+  "context": "This is a wireframe-styled design system. When generating components, you MUST follow these design principles. All components should have 2px borders, flat shadows, and use the Shantell Sans font. You can reference any component from the registry at https://wireframe-registry-template.vercel.app/r/{component-name}.json"
+}
