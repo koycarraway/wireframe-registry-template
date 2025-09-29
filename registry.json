@@ -1,0 +1,372 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "fleetio-wireframe-kit",
+  "homepage": "https://fleetio.com",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Wireframe-styled button with 2px borders and custom hover states for fleet management applications",
+      "files": [
+        {
+          "path": "registry/new-york/ui/button/button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["class-variance-authority", "clsx", "tailwind-merge"]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Input field with 2px border styling and black focus state",
+      "files": [
+        {
+          "path": "registry/new-york/ui/input/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "Wireframe-styled checkbox with thick borders and clean check state",
+      "files": [
+        {
+          "path": "registry/new-york/ui/checkbox/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-checkbox"]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "Radio buttons with wireframe styling - thick borders and clear selection states",
+      "files": [
+        {
+          "path": "registry/new-york/ui/radio-group/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-radio-group"]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Toggle switch with 2px border that appears when active",
+      "files": [
+        {
+          "path": "registry/new-york/ui/switch/switch.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-switch"]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Multi-line text input matching the input component styling",
+      "files": [
+        {
+          "path": "registry/new-york/ui/textarea/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Dropdown select with input-matching trigger and flat shadow dropdown",
+      "files": [
+        {
+          "path": "registry/new-york/ui/select/select.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-select"]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Form label component",
+      "files": [
+        {
+          "path": "registry/new-york/ui/label/label.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-label"]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Horizontal and vertical separator with 2px thickness",
+      "files": [
+        {
+          "path": "registry/new-york/ui/separator/separator.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-separator"]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Popover with 2px black border and flat shadow styling",
+      "files": [
+        {
+          "path": "registry/new-york/ui/popover/popover.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-popover"]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Modal dialog for fleet management workflows",
+      "files": [
+        {
+          "path": "registry/new-york/ui/dialog/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-dialog"]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "Confirmation dialog for important fleet management actions",
+      "files": [
+        {
+          "path": "registry/new-york/ui/alert-dialog/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-alert-dialog"],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "Dropdown menu with flat shadow and 2px borders",
+      "files": [
+        {
+          "path": "registry/new-york/ui/dropdown-menu/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-dropdown-menu"],
+      "registryDependencies": ["separator"]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "Hover card with flat shadow styling",
+      "files": [
+        {
+          "path": "registry/new-york/ui/hover-card/hover-card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-hover-card"]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Content card for displaying fleet information",
+      "files": [
+        {
+          "path": "registry/new-york/ui/card/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Status badge with multiple variants for fleet statuses",
+      "files": [
+        {
+          "path": "registry/new-york/ui/badge/badge.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["class-variance-authority"]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "User avatar for drivers and fleet managers",
+      "files": [
+        {
+          "path": "registry/new-york/ui/avatar/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-avatar"]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Data table for fleet management information",
+      "files": [
+        {
+          "path": "registry/new-york/ui/table/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Tabs with bottom border style (3px on active/hover)",
+      "files": [
+        {
+          "path": "registry/new-york/ui/tabs/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-tabs"]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Alert component for fleet notifications and warnings",
+      "files": [
+        {
+          "path": "registry/new-york/ui/alert/alert.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["class-variance-authority"]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Loading skeleton for fleet data",
+      "files": [
+        {
+          "path": "registry/new-york/ui/skeleton/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Tooltip for additional fleet information",
+      "files": [
+        {
+          "path": "registry/new-york/ui/tooltip/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-tooltip"]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "Breadcrumb navigation for fleet management hierarchy",
+      "files": [
+        {
+          "path": "registry/new-york/ui/breadcrumb/breadcrumb.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot"]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "Calendar with flat shadow styling for fleet scheduling",
+      "files": [
+        {
+          "path": "registry/new-york/ui/calendar/calendar.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["react-day-picker@^9.4.4", "date-fns"],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:ui",
+      "title": "Date Picker",
+      "description": "Custom date picker matching input styling for fleet dates",
+      "files": [
+        {
+          "path": "registry/new-york/ui/date-picker/date-picker.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["date-fns"],
+      "registryDependencies": ["calendar", "popover", "button"]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "Toast notifications with flat shadow and 2px border styling",
+      "files": [
+        {
+          "path": "registry/new-york/ui/sonner/sonner.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["next-themes", "sonner"]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "Collapsible sidebar with icons and nested navigation for fleet management",
+      "files": [
+        {
+          "path": "registry/new-york/ui/sidebar/sidebar.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-separator", "@radix-ui/react-slot"],
+      "registryDependencies": ["button", "separator", "sheet", "tooltip"]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "Side sheet component (used by sidebar)",
+      "files": [
+        {
+          "path": "registry/new-york/ui/sheet/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-dialog"],
+      "registryDependencies": ["button"]
+    }
+  ]
+}

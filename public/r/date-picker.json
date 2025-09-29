@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "date-picker",
+  "type": "registry:ui",
+  "title": "Date Picker",
+  "description": "Custom date picker matching input styling for fleet dates",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "calendar",
+    "popover",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/ui/date-picker/date-picker.tsx",
+      "content": "import * as React from \"react\"\nimport { format } from \"date-fns\"\nimport { Calendar as CalendarIcon } from \"lucide-react\"\n\nimport { cn } from \"@/registry/new-york/lib/utils\"\nimport { Button } from \"@/registry/new-york/ui/button/button\"\nimport { Calendar } from \"@/registry/new-york/ui/calendar/calendar\"\nimport {\n  Popover,\n  PopoverContent,\n  PopoverTrigger,\n} from \"@/registry/new-york/ui/popover/popover\"\n\ninterface DatePickerProps {\n  date?: Date\n  onSelect?: (date: Date | undefined) => void\n  placeholder?: string\n  disabled?: boolean\n  className?: string\n}\n\nexport function DatePicker({\n  date,\n  onSelect,\n  placeholder = \"Pick a date\",\n  disabled = false,\n  className,\n}: DatePickerProps) {\n  return (\n    <Popover>\n      <PopoverTrigger asChild>\n        <button\n          className={cn(\n            \"flex h-9 w-[280px] items-center justify-start rounded-sm border-2 border-input bg-transparent px-3 py-1 text-base transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\",\n            !date && \"text-muted-foreground\",\n            className\n          )}\n          disabled={disabled}\n        >\n          <CalendarIcon className=\"mr-2 h-4 w-4\" />\n          {date ? format(date, \"PPP\") : placeholder}\n        </button>\n      </PopoverTrigger>\n      <PopoverContent className=\"w-auto p-0\">\n        <Calendar\n          mode=\"single\"\n          selected={date}\n          onSelect={onSelect}\n          initialFocus\n        />\n      </PopoverContent>\n    </Popover>\n  )\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}
