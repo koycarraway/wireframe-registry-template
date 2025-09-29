@@ -6,7 +6,7 @@
 
 set -e
 
-SOURCE_DIR="../fleetio-wireframe-kit"
+SOURCE_DIR="../wireframe-kit"
 DEST_DIR="."
 
 echo "🔄 Syncing Wireframe Components..."

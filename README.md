@@ -1,6 +1,6 @@
 # Wireframe Kit - Registry
 
-A shadcn/ui registry for wireframe-styled UI components designed for fleet management applications.
+A shadcn/ui registry for wireframe-styled UI components with bold 2px borders and flat shadows.
 
 ## 🎨 Features
 
@@ -8,7 +8,7 @@ A shadcn/ui registry for wireframe-styled UI components designed for fleet manag
 - **2px Black Borders** - Bold, clear borders for that wireframe aesthetic
 - **Flat Shadow Utility** - Custom 6px offset shadow for depth without gradients  
 - **Shantell Sans Typography** - Handwriting-style font for wireframe feel
-- **Fleet Management Examples** - Real-world examples throughout
+- **Generic Examples** - Real-world examples throughout
 
 ## 📦 Installation
 
@@ -24,7 +24,7 @@ npx shadcn@latest add http://localhost:3000/r/date-picker.json
 
 - **Homepage**: http://localhost:3000 - Browse all 29 components
 - **Showcase**: http://localhost:3000/showcase - See components in action
-- **Full Examples**: See `../fleetio-wireframe-kit/src/App.tsx` for comprehensive fleet management examples
+- **Full Examples**: See `../wireframe-kit/src/App.tsx` for comprehensive examples
 
 ## 📚 Available Components
 
@@ -54,7 +54,7 @@ npx shadcn@latest add http://localhost:3000/r/date-picker.json
 
 ### Navigation
 - `breadcrumb` - Breadcrumb navigation
-- `sidebar` - Collapsible sidebar with fleet taxonomy
+- `sidebar` - Collapsible sidebar with navigation
 
 ### Feedback
 - `alert` - Alert notifications (default, destructive, warning, success)
@@ -76,15 +76,15 @@ This is the **registry/publishing project**. For development:
 
 ### Work in the Development Project
 ```bash
-cd ../fleetio-wireframe-kit
+cd ../wireframe-kit
 npm run dev
 # http://localhost:5173 - Full showcase with all examples
 ```
 
 ### Sync Changes to Registry
 ```bash
-cd fleetio-wireframe-registry
-./sync-components.sh
+cd wireframe-registry
+./sync-from-dev.sh
 npm run registry:build
 ```
 
@@ -93,7 +93,7 @@ See [DEVELOPMENT.md](./DEVELOPMENT.md) for detailed workflow.
 ## 📂 Project Structure
 
 ```
-fleetio-wireframe-registry/
+wireframe-registry/
 ├── app/
 │   ├── page.tsx              # Component list homepage
 │   ├── showcase/page.tsx     # Interactive preview
@@ -114,8 +114,8 @@ Deploy to Vercel:
 
 ## 💡 Why Two Projects?
 
-- **`fleetio-wireframe-kit`** - Development environment with comprehensive examples
-- **`fleetio-wireframe-registry`** - Publishing/distribution of components
+- **`wireframe-kit`** - Development environment with comprehensive examples
+- **`wireframe-registry`** - Publishing/distribution of components
 
 This separation keeps the registry clean while allowing full development and testing in the original project.
 
@@ -130,6 +130,6 @@ All components include:
 
 ## 📞 More Information
 
-- Full component examples: `../fleetio-wireframe-kit/src/App.tsx`
+- Full component examples: `../wireframe-kit/src/App.tsx`
 - Development guide: [DEVELOPMENT.md](./DEVELOPMENT.md)
 - Custom styles: `app/globals.css` (especially `.shadow-flat` utility)
