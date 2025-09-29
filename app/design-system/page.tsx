@@ -81,7 +81,7 @@ When creating new components, reference the existing wireframe-styled components
             <div>
               <h3 className="text-lg font-semibold">Method 2: Use Registry Components</h3>
               <p className="text-sm text-muted-foreground">
-                Click "Open in v0" buttons on individual components to get pre-configured context.
+                Click &quot;Open in v0&quot; buttons on individual components to get pre-configured context.
               </p>
             </div>
             <div>
