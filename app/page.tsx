@@ -25,6 +25,11 @@ export default function Home() {
                 View Component Showcase →
               </Button>
             </Link>
+            <Link href="/design-system">
+              <Button variant="outline" className="ml-2">
+                Design System Context →
+              </Button>
+            </Link>
           </div>
         </div>
 
