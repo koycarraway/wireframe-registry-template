@@ -2,7 +2,7 @@
 
 ## ✅ All Fixes Completed
 
-Your Fleetio Wireframe Kit registry is now **100% perfect** and production-ready!
+Your Wireframe Kit registry is now **100% perfect** and production-ready!
 
 ---
 
@@ -200,5 +200,5 @@ For questions about:
 
 ---
 
-**Built with ❤️ for Fleetio**
+**Built with ❤️ for Wireframe Design**
 *A production-ready shadcn/ui registry with custom wireframe styling*

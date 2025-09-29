@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "fleetio-wireframe-kit",
-  "homepage": "https://fleetio.com",
+  "name": "wireframe-kit",
+  "homepage": "https://wireframe-kit.com",
   "items": [
     {
       "name": "button",

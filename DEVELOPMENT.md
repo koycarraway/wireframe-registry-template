@@ -1,4 +1,4 @@
-# Fleetio Wireframe Kit - Development Guide
+# Wireframe Kit - Development Guide
 
 ## 📁 Project Structure
 

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fleetio Wireframe Kit",
+  title: "Wireframe Kit",
   description: "A collection of wireframe-styled UI components for fleet management applications",
 };
 

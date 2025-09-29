@@ -27,7 +27,7 @@ export default function ShowcasePage() {
           <div>
             <h1 className="text-4xl font-bold">Component Showcase</h1>
             <p className="text-muted-foreground mt-2">
-              Preview all Fleetio wireframe components in action
+              Preview all wireframe components in action
             </p>
           </div>
           <Link href="/">

@@ -1,4 +1,4 @@
-# Fleetio Wireframe Kit - Registry
+# Wireframe Kit - Registry
 
 A shadcn/ui registry for wireframe-styled UI components designed for fleet management applications.
 

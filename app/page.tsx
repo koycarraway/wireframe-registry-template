@@ -12,7 +12,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Header */}
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold">Fleetio Wireframe Kit</h1>
+          <h1 className="text-4xl font-bold">Wireframe Kit</h1>
           <p className="text-lg text-muted-foreground">
             A collection of wireframe-styled UI components for fleet management applications
           </p>

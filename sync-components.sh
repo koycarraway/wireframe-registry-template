@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Sync components from fleetio-wireframe-kit to registry
+# Sync components from wireframe-kit to registry
 # Usage: ./sync-components.sh
 
 SOURCE="../fleetio-wireframe-kit/src"
 TARGET="."
 
-echo "🔄 Syncing components from fleetio-wireframe-kit..."
+echo "🔄 Syncing components from wireframe-kit..."
 
 # Sync components
 echo "  📦 Copying UI components..."

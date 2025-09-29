@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Comprehensive Sync Script - Development to Registry
-# Syncs wireframe components from fleetio-wireframe-kit to fleetio-wireframe-registry
+# Syncs wireframe components from wireframe-kit to wireframe-registry
 # and fixes imports for registry compliance
 
 set -e
@@ -9,7 +9,7 @@ set -e
 SOURCE_DIR="../fleetio-wireframe-kit"
 DEST_DIR="."
 
-echo "🔄 Syncing Fleetio Wireframe Components..."
+echo "🔄 Syncing Wireframe Components..."
 echo ""
 
 # Step 1: Sync UI components to components/ui (for homepage/showcase)
