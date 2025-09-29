@@ -1,0 +1,48 @@
+name: Update Lockfile
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'package.json'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'package.json'
+
+jobs:
+  update-lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.5
+      
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      
+      - name: Check for lockfile changes
+        id: check-lockfile
+        run: |
+          if git diff --quiet pnpm-lock.yaml; then
+            echo "lockfile-updated=false" >> $GITHUB_OUTPUT
+          else
+            echo "lockfile-updated=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Update lockfile if needed
+        if: steps.check-lockfile.outputs.lockfile-updated == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add pnpm-lock.yaml
+          git commit -m "Update pnpm-lock.yaml to match package.json"
+          git push
