@@ -5,6 +5,18 @@
   "description": "A wireframe-styled design system with 2px borders, flat shadows, and Shantell Sans typography for fleet management applications",
   "items": [
     {
+      "name": "theme",
+      "type": "registry:style",
+      "title": "Theme",
+      "description": "Wireframe Kit theme with custom design tokens",
+      "files": [
+        {
+          "path": "registry/new-york/styles/theme.css",
+          "type": "registry:style"
+        }
+      ]
+    },
+    {
       "name": "button",
       "type": "registry:ui",
       "title": "Button",
