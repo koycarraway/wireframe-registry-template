@@ -22,7 +22,7 @@ export async function GET() {
       },
       
       // All available components with full context
-      components: registry.items.map((item: any) => ({
+      components: registry.items.map((item: { name: string; type: string; title: string; description: string; dependencies?: string[]; registryDependencies?: string[] }) => ({
         name: item.name,
         type: item.type,
         title: item.title,

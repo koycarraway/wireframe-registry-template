@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 export default function V0IntegrationPage() {
   return (
@@ -164,19 +164,19 @@ export default function V0IntegrationPage() {
               <div className="p-4 border-2 border-black rounded-md">
                 <h4 className="font-semibold mb-2">Example 1: Form with Inputs</h4>
                 <p className="text-sm text-muted-foreground">
-                  "Create a contact form using the Input, Button, and Card components from the Wireframe Kit registry"
+                  &quot;Create a contact form using the Input, Button, and Card components from the Wireframe Kit registry&quot;
                 </p>
               </div>
               <div className="p-4 border-2 border-black rounded-md">
                 <h4 className="font-semibold mb-2">Example 2: Dashboard Layout</h4>
                 <p className="text-sm text-muted-foreground">
-                  "Build a dashboard using Card, Table, Tabs, and Sidebar components with wireframe styling"
+                  &quot;Build a dashboard using Card, Table, Tabs, and Sidebar components with wireframe styling&quot;
                 </p>
               </div>
               <div className="p-4 border-2 border-black rounded-md">
                 <h4 className="font-semibold mb-2">Example 3: Data Display</h4>
                 <p className="text-sm text-muted-foreground">
-                  "Create a data table with filters using Table, Select, Input, and Button components"
+                  &quot;Create a data table with filters using Table, Select, Input, and Button components&quot;
                 </p>
               </div>
             </div>
@@ -185,9 +185,9 @@ export default function V0IntegrationPage() {
 
         <div className="text-center space-y-4">
           <Button asChild>
-            <a href="/" className="text-white">
+            <Link href="/" className="text-white">
               Back to Registry
-            </a>
+            </Link>
           </Button>
         </div>
       </div>

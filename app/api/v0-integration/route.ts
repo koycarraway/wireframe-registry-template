@@ -23,7 +23,7 @@ export async function GET(request: Request) {
         homepage: registry.homepage,
         description: registry.description,
         totalComponents: registry.items.length,
-        components: registry.items.map((item: any) => ({
+        components: registry.items.map((item: { name: string; type: string; title: string; description: string }) => ({
           name: item.name,
           type: item.type,
           title: item.title,
