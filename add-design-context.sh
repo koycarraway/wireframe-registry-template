@@ -1,4 +1,9 @@
-/**
+#!/bin/bash
+
+# Add design system context to all component files
+REGISTRY_UI_DIR="registry/new-york/ui"
+
+DESIGN_CONTEXT='/**
  * WIREFRAME KIT DESIGN SYSTEM CONTEXT
  * 
  * CRITICAL: This is a custom wireframe-styled design system. When generating components, you MUST follow these design principles:
@@ -30,28 +35,31 @@
  * Registry Components Available: https://wireframe-registry-template.vercel.app/r/{component-name}.json
  */
 
+'
 
-import { useTheme } from "next-themes"
-import { Toaster as Sonner, ToasterProps } from "sonner"
+echo "Adding design system context to all components..."
 
-const Toaster = ({ ...props }: ToasterProps) => {
-  const { theme = "system" } = useTheme()
+for component_dir in "$REGISTRY_UI_DIR"/*; do
+    if [ -d "$component_dir" ]; then
+        component_name=$(basename "$component_dir")
+        component_file="$component_dir/${component_name}.tsx"
+        
+        if [ -f "$component_file" ]; then
+            echo "Processing $component_name..."
+            
+            # Check if context is already added
+            if ! grep -q "WIREFRAME KIT DESIGN SYSTEM CONTEXT" "$component_file"; then
+                # Create a temporary file with the context
+                echo "$DESIGN_CONTEXT" > "${component_file}.tmp"
+                cat "$component_file" >> "${component_file}.tmp"
+                mv "${component_file}.tmp" "$component_file"
+                echo "  ✅ Added design context to $component_name"
+            else
+                echo "  ⏭️  Design context already exists in $component_name"
+            fi
+        fi
+    fi
+done
 
-  return (
-    <Sonner
-      theme={theme as ToasterProps["theme"]}
-      className="toaster group"
-      style={
-        {
-          "--normal-bg": "var(--popover)",
-          "--normal-text": "var(--popover-foreground)",
-          "--normal-border": "2px solid black",
-          "--normal-shadow": "6px 6px 0px 0px #d1d5db",
-        } as React.CSSProperties
-      }
-      {...props}
-    />
-  )
-}
-
-export { Toaster }
+echo "✅ Design system context added to all components!"
+echo "Run 'npm run registry:build' to rebuild the registry with the new context."
