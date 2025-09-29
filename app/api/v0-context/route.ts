@@ -51,6 +51,14 @@ export async function GET(request: Request) {
       }
     }
     
+    // Define the file type
+    interface ContextFile {
+      name: string
+      path: string
+      type: string
+      content: string
+    }
+    
     // Read all context files
     const contextData = {
       designSystem: {
@@ -59,7 +67,7 @@ export async function GET(request: Request) {
         version: '1.0.0',
         homepage: 'https://wireframe-registry-template.vercel.app'
       },
-      files: [] as any[]
+      files: [] as ContextFile[]
     }
     
     for (const file of contextFiles) {
