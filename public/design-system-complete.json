@@ -1,0 +1,65 @@
+{
+  "wireframeKit": {
+    "name": "Wireframe Kit Design System",
+    "description": "A comprehensive wireframe-styled design system with 2px borders, flat shadows, and Shantell Sans typography for fleet management applications",
+    "version": "1.0.0",
+    "homepage": "https://wireframe-registry-template.vercel.app",
+    "registry": "https://wireframe-registry-template.vercel.app/r/registry.json"
+  },
+  "designPrinciples": {
+    "core": [
+      "2px black borders on all interactive elements (buttons, inputs, cards, etc.)",
+      "Flat shadows (6px offset, no gradients) on overlays and dropdowns",
+      "Shantell Sans typography for headings and labels",
+      "Black focus states with gray outline shadows",
+      "Light gray hover states for secondary elements"
+    ],
+    "forbidden": [
+      "Gradient shadows",
+      "Thin 1px borders", 
+      "Default shadcn/ui colors without customization"
+    ]
+  },
+  "components": {
+    "form": [
+      "button", "input", "checkbox", "radio-group", "switch", "textarea", "select", "label"
+    ],
+    "overlay": [
+      "popover", "dialog", "alert-dialog", "dropdown-menu", "hover-card"
+    ],
+    "display": [
+      "card", "badge", "avatar", "table", "tabs", "alert", "skeleton", "tooltip"
+    ],
+    "navigation": [
+      "breadcrumb", "sidebar", "sheet"
+    ],
+    "date": [
+      "calendar", "date-picker"
+    ],
+    "feedback": [
+      "sonner"
+    ]
+  },
+  "styling": {
+    "borders": "2px solid black",
+    "shadows": "6px 6px 0px 0px #d1d5db",
+    "font": "Shantell Sans",
+    "colors": {
+      "primary": "black",
+      "secondary": "light gray", 
+      "background": "white",
+      "foreground": "black"
+    }
+  },
+  "usage": {
+    "instructions": "When generating components, you MUST follow the wireframe design principles. All components should have 2px borders, flat shadows, and use the Shantell Sans font. You can reference any component from the registry.",
+    "registry": "https://wireframe-registry-template.vercel.app/r/{component-name}.json",
+    "examples": {
+      "button": "Default (black bg, white text), Outline (2px black border, white bg, light gray hover)",
+      "input": "2px border, black focus, flat shadow utility",
+      "card": "2px black border, flat shadow, white background",
+      "popover": "2px black border, flat shadow, white background"
+    }
+  },
+  "context": "This is a wireframe-styled design system. When generating components, you MUST follow these design principles. All components should have 2px borders, flat shadows, and use the Shantell Sans font. You can reference any component from the registry at https://wireframe-registry-template.vercel.app/r/{component-name}.json"
+}

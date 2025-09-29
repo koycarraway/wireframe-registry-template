@@ -16,7 +16,7 @@ export function OpenInV0Button({
       asChild
     >
       <a
-        href={`https://v0.dev/chat/api/open?url=https://wireframe-registry-template.vercel.app/r/${name}.json&context=https://wireframe-registry-template.vercel.app/design-system.json&registry=https://wireframe-registry-template.vercel.app/r/registry.json`}
+        href={`https://v0.dev/chat/api/open?url=https://wireframe-registry-template.vercel.app/r/${name}.json&context=https://wireframe-registry-template.vercel.app/design-system-complete.json&registry=https://wireframe-registry-template.vercel.app/r/registry.json&designSystem=https://wireframe-registry-template.vercel.app/design-system.json&v0Context=https://wireframe-registry-template.vercel.app/v0-context.json`}
         target="_blank"
         rel="noreferrer"
       >
