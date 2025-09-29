@@ -15,11 +15,11 @@ export function OpenInV0Button({
       )}
       asChild
     >
-      <a
-        href={`https://v0.dev/chat/api/open?url=https://wireframe-registry-template.vercel.app/r/${name}.json&context=https://wireframe-registry-template.vercel.app/v0-complete-context.json&registry=https://wireframe-registry-template.vercel.app/r/registry.json&designSystem=https://wireframe-registry-template.vercel.app/design-system-complete.json&v0Context=https://wireframe-registry-template.vercel.app/api/v0-context?component=${name}`}
-        target="_blank"
-        rel="noreferrer"
-      >
+            <a
+              href={`https://v0.dev/chat/api/open?url=https://wireframe-registry-template.vercel.app/r/${name}.json&context=https://wireframe-registry-template.vercel.app/api/v0-integration?component=${name}&registry=https://wireframe-registry-template.vercel.app/r/registry.json&discovery=https://wireframe-registry-template.vercel.app/api/registry-discovery&designSystem=https://wireframe-registry-template.vercel.app/design-system-complete.json`}
+              target="_blank"
+              rel="noreferrer"
+            >
         Open in{" "}
         <svg
           viewBox="0 0 40 20"
