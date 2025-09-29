@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "wireframe-kit",
-  "homepage": "https://wireframe-kit.com",
+  "homepage": "https://wireframe-registry-template.vercel.app",
   "items": [
     {
       "name": "button",

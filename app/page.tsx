@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import { OpenInV0Button } from "@/components/open-in-v0-button"
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="bg-muted p-4 rounded-md font-mono text-sm">
-              npx shadcn@latest add http://localhost:3000/r/button.json
+              npx shadcn@latest add https://wireframe-registry-template.vercel.app/r/button.json
             </div>
             <p className="text-sm text-muted-foreground">
               Replace <code>button</code> with any component name from the list below.
@@ -89,18 +90,21 @@ export default function Home() {
                     {component.desc}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    onClick={() => {
-                      navigator.clipboard.writeText(
-                        `npx shadcn@latest add http://localhost:3000/r/${component.name}.json`
-                      )
-                    }}
-                  >
-                    Copy Install Command
-                  </Button>
+                <CardContent className="space-y-2">
+                  <div className="flex gap-2">
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      onClick={() => {
+                        navigator.clipboard.writeText(
+                          `npx shadcn@latest add https://wireframe-registry-template.vercel.app/r/${component.name}.json`
+                        )
+                      }}
+                    >
+                      Copy Install Command
+                    </Button>
+                    <OpenInV0Button name={component.name} />
+                  </div>
                 </CardContent>
               </Card>
             ))}
