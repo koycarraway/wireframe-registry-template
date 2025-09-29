@@ -59,6 +59,25 @@ export async function GET(request: Request) {
       content: string
     }
     
+    // Define the registry type
+    interface Registry {
+      name: string
+      homepage: string
+      description: string
+      items: Array<{
+        name: string
+        type: string
+        title: string
+        description: string
+        files: Array<{
+          path: string
+          type: string
+        }>
+        dependencies?: string[]
+        registryDependencies?: string[]
+      }>
+    }
+    
     // Read all context files
     const contextData = {
       designSystem: {
@@ -67,7 +86,8 @@ export async function GET(request: Request) {
         version: '1.0.0',
         homepage: 'https://wireframe-registry-template.vercel.app'
       },
-      files: [] as ContextFile[]
+      files: [] as ContextFile[],
+      registry: null as Registry | null
     }
     
     for (const file of contextFiles) {
